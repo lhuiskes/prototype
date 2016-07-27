@@ -1,0 +1,71 @@
+//
+// Main
+// --------------------------------------------------
+//
+// Combining custom bootstrap and partials to one file.
+
+// Font path
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+// Set asset path
+$bootstrap-sass-asset-helper: "bootstrap-sass-official/assets/";
+
+// Own color's
+$grey1: #f1f1f2;
+$grey2: #e6e7e8;
+$grey3: #d1d2d4;
+$grey4: #bbbdc0;
+$grey5: #a7a9ab;
+$grey6: #939597;
+$grey7: #808284;
+$grey8: #6d6e70;
+$grey9: #58585b;
+
+// Custom bootstrap.
+@import "custom_bootstrap/variables";
+@import "custom_bootstrap/bootstrap";
+
+// Fontawesome.
+$fa-font-path:        "fontawesome/fonts" !default;
+@import "../bower_components/fontawesome/scss/font-awesome.scss";
+
+// Carousel
+@import 'partials/carousel';
+
+// Layout, positioning and floats.
+@import 'partials/layout';
+
+// Header and footer styling.
+@import 'partials/header';
+@import 'partials/footer';
+
+// Form styling.
+@import 'partials/forms';
+
+// Components are project specific building blocks.
+@import 'partials/components';
+
+// Page specific styling.
+@import 'partials/pages';
+
+// Page specific styling.
+@import 'partials/plone_edit_form';
+
+// Portlet specific styling.
+@import 'partials/portlets';
+
+
+.showmedia{
+  position: fixed;
+  z-index: 999999;
+  padding: 5px;
+  right: 0;
+  background-color: #fff;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+// Dirty fix for expertise list view.
+.documentByLine {
+  display: none;
+}

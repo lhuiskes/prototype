@@ -1,0 +1,64 @@
+//
+// Header
+// --------------------------------------------------
+//
+// The header elements.
+// ------------------------
+// Header Parts
+// ------------------------
+
+.logobar{
+  background: $grey3;
+  height: 150px;
+}
+
+.navbar{
+
+}
+
+.logobar{
+  .search {
+     margin: 2em 0 0 0;
+     padding: 0;
+     background: transparent;
+     display: block !important;
+     .input-group input.form-control {
+         border-top-left-radius: 10px;
+         border-bottom-left-radius: 10px;
+     }
+     .btn-default{
+       border-top-right-radius: 10px;
+       border-bottom-right-radius: 10px;
+     }
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// Mobile first
+// -----------------------------------------------------------------------------
+
+
+// -----------------------------------------------------------------------------
+// Small screen / tablet
+// -----------------------------------------------------------------------------
+
+@media (min-width: $screen-sm-min) {
+
+}
+
+// -----------------------------------------------------------------------------
+// Medium screen / desktop
+// -----------------------------------------------------------------------------
+
+@media (min-width: $screen-md-min) {
+
+}
+
+// -----------------------------------------------------------------------------
+// Large screen / wide desktop
+// -----------------------------------------------------------------------------
+
+@media (min-width: $screen-lg-min) {
+
+}

@@ -1,0 +1,229 @@
+//
+// Components
+// --------------------------------------------------
+//
+// Components are project specific building blocks.
+
+
+// -----------------------------------------------------------------------------
+// Mobile first
+// -----------------------------------------------------------------------------
+
+
+//#parent-fieldname-text img{
+//  @extend .img-responsive;
+//}
+
+.error{
+  color: red;
+}
+
+h5{
+  font-weight: bold;
+}
+
+video {
+  margin-bottom: 15px;
+}
+
+dt, dd {
+  line-height: 1.9em!important;
+}
+
+#content {
+  line-height: normal;
+  font-size: 100%;
+  margin: 0;
+  p,li {
+    line-height:1.5em;
+  }
+}
+
+.tileItem {
+  a{
+    text-decoration: none;
+  }
+  .tileImage{
+    float: right;
+  }
+}
+
+.state-published{
+  color: $brand-primary !important;
+}
+
+.portalMessage{
+  @extend .alert;
+  &.success{
+    @extend .alert-success;
+  }
+  &.info{
+    @extend .alert-info;
+  }
+  &.error{
+    @extend .alert-danger;
+  }
+  &.warning{
+    @extend .alert-warning;
+  }
+}
+
+.outer-wrapper{
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
+}
+
+.departments{
+  padding: 50px 0;
+  .circle-picture{
+    position: relative;
+    width: 40%;
+    height: auto;
+    padding-top: 40%;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px dashed $grey9;
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 15px;
+    }
+
+  }
+  .circle-holder{
+    position: relative;
+    padding: 40px 0;
+  }
+  .circle-tekst{
+    > div{
+      display: block;
+      width: 20%;
+      position: absolute;
+      -webkit-transition: opacity .5s linear;
+      transition: opacity .5s linear;
+      z-index: 2000;
+      color: $grey5;
+      cursor: pointer;
+      h3{
+        margin-top: 0;
+      }
+      &:hover{
+        > .info{
+          display: block;
+        }
+      }
+    }
+    .active{
+      h4{
+        text-decoration: underline;
+      }
+      color: $grey8;
+    }
+    .info{
+      display: none;
+    }
+    .top-center{
+      width: 40%;
+      right: 50%;
+      margin-right: -20%;
+      bottom: 93%;
+      text-align: center;
+    }
+    .center-left{
+      text-align: right;
+      top: 40%;
+      left: 3%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+    }
+    .center-right{
+      text-align: left;
+      right: 3%;
+      top: 40%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+    }
+    .bottom-left{
+      text-align: right;
+      left: 3%;
+      bottom: 15%;
+    }
+    .bottom-right{
+      text-align: left;
+      bottom: 15%;
+      right: 3%;
+    }
+  }
+}
+
+
+.content-wrapper{
+  background: $grey2;
+  padding: 50px 0;
+  article{
+    background: $grey1;
+    color: $grey8;
+    padding: 15px 0;
+    margin: 15px 0;
+    > *{
+      padding: 0 15px;
+    }
+  }
+  h2{
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $grey3;
+    i{
+      padding-right: 15px;
+    }
+  }
+  .article-news{
+    span{
+      display: block;
+    }
+  }
+}
+.masonry:after{
+  clear: both;
+  display: block;
+}
+
+
+// -----------------------------------------------------------------------------
+// Small screen / tablet
+// -----------------------------------------------------------------------------
+
+@media (min-width: $screen-sm-min) {
+
+}
+
+
+// -----------------------------------------------------------------------------
+// Medium screen / desktop
+// -----------------------------------------------------------------------------
+
+@media (min-width: $screen-md-min) {
+
+}
+
+// -----------------------------------------------------------------------------
+// Large screen / wide desktop
+// -----------------------------------------------------------------------------
+
+@media (min-width: $screen-lg-min) {
+
+}
