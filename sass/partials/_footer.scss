@@ -19,10 +19,15 @@ body {
   margin-bottom: 100px;
 }
 .doormat {
-  background: $grey5;
-  border-top: 6px solid $grey9;
+  background: $grey3;
+  border-top: 6px solid $grey7;
   padding: 2em 0 5em 0;
-  color: $grey2;
+  color: $grey7;
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 }
 
 
@@ -41,6 +46,9 @@ body {
   .scroll{
     line-height: 100px;
     float: right;
+    a{
+      text-decoration: none;
+    }
     i{
       font-size: 20px;
       background: #eaeaea;

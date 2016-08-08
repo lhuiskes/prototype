@@ -13,8 +13,17 @@
 }
 
 .navbar{
-
+  text-transform: uppercase;
+  .container{
+    position: relative;
+  }
 }
+.navbar-brand{
+  color: $mpi-green;
+  font-size: 24px;
+  margin-top: 50px;
+}
+
 
 .logobar{
   .search {
@@ -27,12 +36,19 @@
          border-bottom-left-radius: 10px;
      }
      .btn-default{
+       background-color: $grey9;
+       color: $grey6;
        border-top-right-radius: 10px;
        border-bottom-right-radius: 10px;
      }
   }
 }
 
+.max_logo{
+  position: absolute;
+  right: 0;
+  top: -17px;
+}
 
 // -----------------------------------------------------------------------------
 // Mobile first

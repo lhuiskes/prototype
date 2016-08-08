@@ -18,6 +18,10 @@
   color: red;
 }
 
+a{
+  font-weight: 600;
+}
+
 h5{
   font-weight: bold;
 }
@@ -74,103 +78,6 @@ dt, dd {
   flex: 1 0 0;
 }
 
-.departments{
-  padding: 50px 0;
-  .circle-picture{
-    position: relative;
-    width: 40%;
-    height: auto;
-    padding-top: 40%;
-    margin: 0 auto;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px dashed $grey9;
-    ul{
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    img{
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 15px;
-    }
-
-  }
-  .circle-holder{
-    position: relative;
-    padding: 40px 0;
-  }
-  .circle-tekst{
-    > div{
-      display: block;
-      width: 20%;
-      position: absolute;
-      -webkit-transition: opacity .5s linear;
-      transition: opacity .5s linear;
-      z-index: 2000;
-      color: $grey5;
-      cursor: pointer;
-      h3{
-        margin-top: 0;
-      }
-      &:hover{
-        > .info{
-          display: block;
-        }
-      }
-    }
-    .active{
-      h4{
-        text-decoration: underline;
-      }
-      color: $grey8;
-    }
-    .info{
-      display: none;
-    }
-    .top-center{
-      width: 40%;
-      right: 50%;
-      margin-right: -20%;
-      bottom: 93%;
-      text-align: center;
-    }
-    .center-left{
-      text-align: right;
-      top: 40%;
-      left: 3%;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-    }
-    .center-right{
-      text-align: left;
-      right: 3%;
-      top: 40%;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-    }
-    .bottom-left{
-      text-align: right;
-      left: 3%;
-      bottom: 15%;
-    }
-    .bottom-right{
-      text-align: left;
-      bottom: 15%;
-      right: 3%;
-    }
-  }
-}
-
-
 .content-wrapper{
   background: $grey2;
   padding: 50px 0;
@@ -182,14 +89,32 @@ dt, dd {
     > *{
       padding: 0 15px;
     }
+    .publication {
+      margin: 10px 15px;
+      border-bottom: 2px dotted $mpi-green;
+      padding: 0;
+      a{
+        display: table;
+        padding: 10px 0;
+        i{
+          padding-left: 5px;
+          font-weight: inherit;
+        }
+      }
+    }
   }
   h2{
     margin-top: 0;
     padding-bottom: 10px;
     border-bottom: 2px solid $grey3;
+    color: $mpi-green;
+    font-size: 26px;
     i{
       padding-right: 15px;
     }
+  }
+  h5{
+    color: $mpi-green;
   }
   .article-news{
     span{
@@ -202,6 +127,22 @@ dt, dd {
   display: block;
 }
 
+
+.btn-readmore{
+  background: $mpi-green;
+  color: $grey3;
+  &:hover{
+    color: $grey3;
+    background: darken($mpi-green, 10);
+  }
+}
+
+
+.introductie{
+  background: $mpi-green;
+  color: white;
+  padding: 50px 0;
+}
 
 // -----------------------------------------------------------------------------
 // Small screen / tablet

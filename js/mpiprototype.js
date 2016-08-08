@@ -7,55 +7,31 @@
     "use strict";
 
     // ---------------------
-    // Setup Slider
+    // Setup Fullscreen
     // ---------------------
-    jQuery(function($) { 
-
-      // settings
-      var $slider = $('.slider'); // class or id of carousel slider
-      var $slide = 'li'; // li from carousel slider
-      var $slider_text = $('.circle-tekst'); // class or id of text slider
-      var $slide_text = 'div'; // div from text slider
-      var $transition_time = 1000; // 1 second
-      var $time_between_slides = 5000; // 5 seconds
-      var $interval
-
-
-      function slides(){
-        return $slider.find($slide);
-      }
-
-      function slides_text(){
-        return $slider_text.find($slide_text);
-      }
-
-      slides().fadeOut();
-
-      // set active classes
-      slides().first().addClass('active');
-      slides_text().first().addClass('active');
-      slides().first().fadeIn($transition_time);
-
-      // auto scroll 
-      $interval = setInterval(
-        function(){
-          var $i = $slider.find($slide + '.active').index();
-          var $p = $slider_text.find($slide_text + '.active').index();
-
-          slides().eq($i).removeClass('active');
-          slides_text().eq($i).removeClass('active');
-          slides().eq($i).fadeOut($transition_time);
-
-          if (slides().length == $i + 1) $i = -1; // loop to start
-
-          slides().eq($i + 1).fadeIn($transition_time);
-          slides().eq($i + 1).addClass('active');
-          slides_text().eq($i + 1).addClass('active');
-        }
-        , $transition_time +  $time_between_slides
-      );
-
+    var isFullscreen = false;
+    
+    $('.fullscreen').on('click', function(e) {
+        $(this).animate({width: '100%', height: 100, position: 'absolute'}, 500);
     });
+    
+    // function fullscreen(){
+    //     var d = {};
+    //     var speed = 900;
+    //     if(!isFullscreen){ // MAXIMIZATION
+    //         d.width = "100%";
+    //         d.height = "100%";
+    //         isFullscreen = true;
+    //         $("h1").slideUp(speed);
+    //     }
+    //     else{ // MINIMIZATION
+    //         d.width = "300px";
+    //         d.height = "100px";
+    //         isFullscreen = false;
+    //         $("h1").slideDown(speed);
+    //     }
+    //     $(".fullscreen").animate(d,speed);
+    // }
     
     // ---------------------
     // Setup Masonry

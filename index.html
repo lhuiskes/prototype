@@ -118,12 +118,27 @@
                 <ul class="nav navbar-nav">
                   <li class="active"><a href="index.html">Home</a></li>
                   <li><a href="#">Departments</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
                   <li><a href="#">people</a></li>
                   <li><a href="#">news</a></li>
                   <li><a href="#">Events</a></li>
                 </ul>
               </div>
               <!--/.nav-collapse -->
+              <div class="max_logo">
+                <img src="img/max-plank-logo.png">
+              </div>
             </div>
           </nav>
         </header>
@@ -137,56 +152,102 @@
                 <div class="departments">
                   <div class="container">
 
-                    <div class="circle-holder">
+                      <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                        
+                        <!-- Indicators -->
+                        <div class="carousel-indicators">
+                          <div data-target="#carousel" data-slide-to="0" class="bottom-left active">
+                            <h4>Department 1</h4>
+                            <div class="info">
+                              Quae vero auctorem tractata ab fiducia dicuntur.
+                            </div>
+                          </div>
+                          <div data-target="#carousel" data-slide-to="1" class="center-left">
+                            <h4>Department 2</h4>
+                            <div class="info">
+                              Quae vero auctorem tractata ab fiducia dicuntur.
+                            </div>
+                          </div>
+                          <div data-target="#carousel" data-slide-to="2" class="top-center">
+                            <h4>Department 3</h4>
+                            <div class="info">
+                              Quae vero auctorem tractata ab fiducia dicuntur.
+                            </div>
+                          </div>
+                          <div data-target="#carousel" data-slide-to="3" class="center-right">
+                            <h4>Department 4</h4>
+                            <div class="info">
+                              Quae vero auctorem tractata ab fiducia dicuntur.
+                            </div>
+                          </div>
+                          <div data-target="#carousel" data-slide-to="4" class="bottom-right">
+                            <h4>Department 5</h4>
+                            <div class="info">
+                              Quae vero auctorem tractata ab fiducia dicuntur.
+                            </div>
+                          </div>
+                        </div>
 
-                      <div class="circle-picture">
-                        <ul class="slider">
-                          <li><img src="img/acquisition.jpg"></li>
-                          <li><img src="img/cognition.jpg"></li>
-                          <li><img src="img/genetics.jpg"></li>
-                          <li><img src="img/neurobiology.png"></li>
-                          <li><img src="img/pioneers_of_psycholinguistics.jpg"></li>
-                        </ul>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <div class="carousel-holder">
+                              <img src="img/acquisition.jpg" alt="...">
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="carousel-holder">
+                              <img src="img/cognition.jpg" alt="...">
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="carousel-holder">
+                              <img src="img/genetics.jpg" alt="...">
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="carousel-holder">
+                              <img src="img/neurobiology.png" alt="...">
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="carousel-holder">
+                              <img src="img/pioneers_of_psycholinguistics.jpg" alt="...">
+                            </div>
+                          </div>
+                        </div>
+
                       </div>
-
-                      <div class="circle-tekst">
-                        <div class="bottom-left">
-                          <h4>Department 1</h4>
-                          <div class="info">
-                            Quae vero auctorem tractata ab fiducia dicuntur.
-                          </div>
-                        </div>
-                        <div class="center-left">
-                          <h4>Department 2</h4>
-                          <div class="info">
-                            Quae vero auctorem tractata ab fiducia dicuntur.
-                          </div>
-                        </div>
-                        <div class="top-center">
-                          <h4>Department 3</h4>
-                          <div class="info">
-                            Quae vero auctorem tractata ab fiducia dicuntur.
-                          </div>
-                        </div>
-                        <div class="center-right">
-                          <h4>Department 4</h4>
-                          <div class="info">
-                            Quae vero auctorem tractata ab fiducia dicuntur.
-                          </div>
-                        </div>
-                        <div class="bottom-right">
-                          <h4>Department 5</h4>
-                          <div class="info">
-                            Quae vero auctorem tractata ab fiducia dicuntur.
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
 
                   </div>
                 </div>
-                
+
+                <div class="introductie">
+                  <div class="container">
+                    <div class="col-xs-6">
+                      <h3>Introduction</h3>
+                      <p>
+                        The Max Planck Institute for Psycholinguistics 
+                        is an institute of the German Max Planck Society. 
+                        Our mission is to undertake basic research into the psychological,
+                        social and biological foundations of language. 
+                        The goal is to understand how our minds and brains process language, 
+                        how language interacts with other aspects of mind, and how we can learn languages of quite different types.
+                      </p>
+                      <p>
+                        The institute is situated on the campus of the Radboud University. 
+                        We participate in the Donders Institute for Brain, Cognition and Behaviour, 
+                        and have particularly close ties to that institute's Centre for Cognitive Neuroimaging. 
+                        We also participate in the Centre for Language Studies. A joint graduate school, 
+                        the IMPRS in Language Sciences, links the Donders Institute, the CLS and the MPI.
+                      </p>
+                    </div>
+                    <div class="col-xs-6 fullscreen">
+                      <img src="img/methods_EEG_psychology.jpg" class="img-responsive">
+                    </div>
+                  </div>
+                </div>
+
                 <div class="content-wrapper">
                   <div class="container">
                     <div class="masonry">
@@ -194,72 +255,93 @@
                     <div class="grid-sizer col-xs-12 col-sm-6 col-md-4"></div>
                     
                     <div class="grid-items col-xs-12 col-sm-6 col-md-4">
+                      <article class="article-event">
+                        <h2><i class="fa fa-calendar" aria-hidden="true"></i>Events</h2>
+                        <label>15:45-17:00 Sep 6, 2016</label>
+                        <h5>Linking social effects in language processing to social effects in language evolution</h5>
+                        <p>
+                          Languages are learned and used in social interaction. 
+                          Therefore, social factors are likely to play a role in 
+                          the way that languages are learned and processed, 
+                          which in turn, influences the form that languages take. 
+                          Indeed, research has shown that information is processed 
+                          and represented differently depending on the social context. 
+                          Similarly, recent research on language evolution has 
+                          started exploring the relationship between linguistic 
+                          properties and the social setting in which languages 
+                          have evolved. Surprisingly, however, these two lines 
+                          of research do not link to each other. 
+                          The goal of this workshop is to try to bridge the gap 
+                          between these lines of research and see how they can inform each other.
+                        </p>
+                        <p><a href="#" class="btn btn-readmore">More</a></p>
+                      </article>
+                    </div>
+
+                    <div class="grid-items col-xs-12 col-sm-6 col-md-4">
+                      <article class="article-publications">
+                        <h2><i class="fa fa-file-text-o" aria-hidden="true"></i>Recent publications</h2>
+                        <div class="publication">
+                          Casillas, M., & Frank, M. C. (2017). 
+                          The development of children's ability to track and predict turn structure in conversation. 
+                          Journal of Memory and Language, 92, 234-253. doi:10.1016/j.jml.2016.06.013.
+                          <a href="#">More<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="publication">
+                          Dias, C., Estruch, S. B., Graham, S. A., McRae, J., 
+                          Sawiak, S. J., Hurst, J. A., Joss, S. K., Holder, S. E., 
+                          Morton, J. E., Turner, C., Thevenon, J., Mellul, K., 
+                          Sánchez-Andrade, G., Ibarra-Soria, X., Derizioti, P., 
+                          Santos, R. F., Lee, S.-C., Faivre, L., Kleefstra, T., 
+                          Liu, P., Hurles, M. E., DDD Study, Fisher, S. E., & Logan, 
+                          D. W. (2016). 
+                          BCL11A haploinsufficiency causes an intellectual disability syndrome 
+                          and dysregulates transcription. The American Journal of Human Genetics. 
+                          Advance online publication. doi:10.1016/j.ajhg.2016.05.030. 
+                          <a href="#">More<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="publication">
+                          Dingemanse, M., Schuerman, W., Reinisch, E., Tufvesson, 
+                          S., & Mitterer, H. (2016). What sound symbolism can and cannot do: 
+                          Testing the iconicity of ideophones from five languages. 
+                          Language, 92(2), e117-e133. doi:10.1353/lan.2016.0034.
+                          <a href="#">More<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </div>
+                        <p><a href="#" class="btn btn-readmore">More</a></p>
+                      </article>
+                    </div>
+
+                    <div class="grid-items col-xs-12 col-sm-6 col-md-4">
+                      <article class="article-event">
+                        <h2><i class="fa fa-calendar" aria-hidden="true"></i>Events</h2>
+                        <label>15:45-17:00 Sep 6, 2016</label>
+                        <h5>Linking social effects in language processing to social effects in language evolution</h5>
+                        <p>
+                          Languages are learned and used in social interaction. 
+                          Therefore, social factors are likely to play a role in 
+                          the way that languages are learned and processed, 
+                          which in turn, influences the form that languages take. 
+                          Indeed, research has shown that information is processed 
+                          and represented differently depending on the social context. 
+                          Similarly, recent research on language evolution has 
+                          started exploring the relationship between linguistic 
+                          properties and the social setting in which languages 
+                          have evolved. Surprisingly, however, these two lines 
+                          of research do not link to each other. 
+                          The goal of this workshop is to try to bridge the gap 
+                          between these lines of research and see how they can inform each other.
+                        </p>
+                        <p><a href="#" class="btn btn-readmore">More</a></p>
+                      </article>
+                    </div>
+
+                    <div class="grid-items col-xs-12 col-sm-6 col-md-4">
                       <article class="article-twitter">
                         <h2><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</h2>
                         <p>
                           Quam diu etiam furor iste tuus nos eludet? 
                           Nec dubitamus multa iter quae et nos invenerat. Paullum deliquit, <a href="#">#ponderibus</a> modulisque suis ratio utitur.
                         </p>
-                      </article>
-                    </div>
-
-                    <div class="grid-items col-xs-12 col-sm-6 col-md-4">
-                      <article class="article-event">
-                        <h2><i class="fa fa-calendar" aria-hidden="true"></i>Events</h2>
-                        <label>15:45-17:00 Sep 6, 2016</label>
-                        <h5>Linking social effects in language processing to social effects in language evolution</h5>
-                        <p>
-                          Languages are learned and used in social interaction. 
-                          Therefore, social factors are likely to play a role in 
-                          the way that languages are learned and processed, 
-                          which in turn, influences the form that languages take. 
-                          Indeed, research has shown that information is processed 
-                          and represented differently depending on the social context. 
-                          Similarly, recent research on language evolution has 
-                          started exploring the relationship between linguistic 
-                          properties and the social setting in which languages 
-                          have evolved. Surprisingly, however, these two lines 
-                          of research do not link to each other. 
-                          The goal of this workshop is to try to bridge the gap 
-                          between these lines of research and see how they can inform each other.
-                        </p>
-                        <a href="#" class="readmore">More</a>
-                      </article>
-                    </div>
-
-                    <div class="grid-items col-xs-12 col-sm-6 col-md-4">
-                      <article class="article-news">
-                        <h2><i class="fa fa-newspaper-o" aria-hidden="true"></i>News</h2>
-                        <h5>Dingemanse, M., Schuerman, W., Reinisch, E., Tufvesson, S., & Mitterer, H. (2016).</h5>
-                        <p>
-                          What sound symbolism can and cannot do: Testing the iconicity of ideophones from five languages.
-                          <span>Language, 92(2), e117-e133.</span>
-                          <span>doi:10.1353/lan.2016.0034.</span>
-                        </p>
-                      </article>
-                    </div>
-
-                    <div class="grid-items col-xs-12 col-sm-6 col-md-4">
-                      <article class="article-event">
-                        <h2><i class="fa fa-calendar" aria-hidden="true"></i>Events</h2>
-                        <label>15:45-17:00 Sep 6, 2016</label>
-                        <h5>Linking social effects in language processing to social effects in language evolution</h5>
-                        <p>
-                          Languages are learned and used in social interaction. 
-                          Therefore, social factors are likely to play a role in 
-                          the way that languages are learned and processed, 
-                          which in turn, influences the form that languages take. 
-                          Indeed, research has shown that information is processed 
-                          and represented differently depending on the social context. 
-                          Similarly, recent research on language evolution has 
-                          started exploring the relationship between linguistic 
-                          properties and the social setting in which languages 
-                          have evolved. Surprisingly, however, these two lines 
-                          of research do not link to each other. 
-                          The goal of this workshop is to try to bridge the gap 
-                          between these lines of research and see how they can inform each other.
-                        </p>
-                        <a href="#" class="readmore">More</a>
                       </article>
                     </div>
 
@@ -289,23 +371,35 @@
 
         <div class="doormat">
           <div class="container" id="portal-footer">
-            <div class="col-xs-6 col-sm-9">
-              <h3>About</h3>
-              <p>
-                The Max Planck Institute for Psycholinguistics 
-                is an institute of the German Max Planck Society. 
-                Our mission is to undertake basic research into the psychological,
-                social and biological foundations of language. 
-                The goal is to understand how our minds and brains process language, 
-                how language interacts with other aspects of mind, and how we can learn languages of quite different types.
-              </p>
-              <p>
-                The institute is situated on the campus of the Radboud University. 
-                We participate in the Donders Institute for Brain, Cognition and Behaviour, 
-                and have particularly close ties to that institute's Centre for Cognitive Neuroimaging. 
-                We also participate in the Centre for Language Studies. A joint graduate school, 
-                the IMPRS in Language Sciences, links the Donders Institute, the CLS and the MPI.
-              </p>
+            <div class="col-xs-6 col-sm-3">
+              <h3>Departments</h3>
+              <ul>
+                <li><a href="#">Language and Cognition</a></li>
+                <li><a href="#">Language and Genetics</a></li>
+                <li><a href="#">Neurobiology of Language</a></li>
+                <li><a href="#">Psychology of Language</a></li>
+                <li><a href="#">Neurogenetics of Vocal Communication Group</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="#">The Language Archive</a></li>
+                <li><a href="#">Tools</a></li>
+                <li><a href="#">Data and Corpora</a></li>
+                <li><a href="#">Labs</a></li>
+                <li><a href="#">Library</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+              <h3>Experiments</h3>
+              <ul>
+                <li><a href="#">How to participate</a></li>
+                <li><a href="#">Where to go?</a></li>
+                <li><a href="#">What to expect?</a></li>
+                <li><a href="#">Online experiments</a></li>
+                <li><a href="#">Registration volunteers</a></li>
+              </ul>
             </div>
             <div class="col-xs-6 col-sm-3">
               <h3>Contact</h3>
