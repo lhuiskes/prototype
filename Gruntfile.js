@@ -64,7 +64,8 @@ module.exports = function(grunt) {
                         // Only uncomment required js.
                         //
                         // Jquery
-                       'bower_components/jquery/dist/jquery.js',
+                       'bower_components/jquery/jquery.js',
+                        'bower_components/jquery-ui/ui/jquery.ui.core.js',
                         // Masonry
                        'bower_components/masonry/dist/masonry.pkgd.js',
                         // Bootstrap

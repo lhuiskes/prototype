@@ -7876,7 +7876,8 @@ button.close {
 
 .carousel-fade {
   position: relative;
-  padding: 40px 0; }
+  padding: 40px 0;
+  margin: 0 -15px; }
   .carousel-fade .carousel-inner .item {
     transition-property: opacity; }
   .carousel-fade .carousel-inner .item,
@@ -7893,93 +7894,116 @@ button.close {
   .carousel-fade .carousel-inner .active.right {
     left: 0;
     transform: translate3d(0, 0, 0); }
-  .carousel-fade .carousel-control {
-    z-index: 2; }
   .carousel-fade .carousel-indicators {
     width: 100%;
     margin: 0;
     left: 0;
-    top: 0;
-    bottom: 0; }
-    .carousel-fade .carousel-indicators > div {
-      display: block;
-      width: 20%;
-      height: auto;
-      position: absolute;
-      -webkit-transition: opacity .5s linear;
-      transition: opacity .5s linear;
-      z-index: 2000;
-      color: #a7a9ab;
-      cursor: pointer; }
-    .carousel-fade .carousel-indicators .active {
-      background: none;
-      color: #5d8787; }
-      .carousel-fade .carousel-indicators .active h4 {
-        color: #5d8787; }
-    .carousel-fade .carousel-indicators .top-center {
-      width: 40%;
-      right: 50%;
-      margin-right: -20%;
-      bottom: 95%;
-      text-align: center; }
-    .carousel-fade .carousel-indicators .center-left {
-      text-align: right;
-      top: 40%;
-      left: 3%;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      -ms-transform: translateY(-50%); }
-    .carousel-fade .carousel-indicators .center-right {
-      text-align: left;
-      right: 3%;
-      top: 40%;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      -ms-transform: translateY(-50%); }
-    .carousel-fade .carousel-indicators .bottom-left {
-      text-align: right;
-      left: 3%;
-      bottom: 15%; }
-    .carousel-fade .carousel-indicators .bottom-right {
-      text-align: left;
-      bottom: 15%;
-      right: 3%; }
-  .carousel-fade .carousel-inner {
-    position: relative;
-    width: 40%;
-    height: auto;
-    padding-top: 40%;
-    margin: 0 auto;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px dashed #5d8787; }
-    .carousel-fade .carousel-inner .item {
-      position: relative;
+    position: absolute;
+    bottom: 40px;
+    padding: 15px;
+    background: rgba(93, 135, 135, 0.8);
+    color: white; }
+    .carousel-fade .carousel-indicators .carousel_indicator {
+      display: none;
+      text-align: left; }
+      .carousel-fade .carousel-indicators .carousel_indicator.active {
+        display: block;
+        width: auto;
+        height: auto;
+        background: transparent; }
+
+@media (min-width: 768px) {
+  .carousel-fade {
+    margin: 0; }
+    .carousel-fade .carousel-control {
+      z-index: 2; }
+    .carousel-fade .carousel-indicators {
       width: 100%;
-      height: 100%;
-      display: block;
-      position: absolute;
-      top: 0;
+      margin: 0;
       left: 0;
-      padding: 15px;
-      overflow: hidden; }
-    .carousel-fade .carousel-inner .carousel-holder {
-      background: #5d8787;
-      width: 100%;
-      height: 100%;
-      border-radius: 50%; }
-      .carousel-fade .carousel-inner .carousel-holder img {
+      top: 0;
+      bottom: 0;
+      background: none; }
+      .carousel-fade .carousel-indicators .carousel_indicator {
+        display: block;
+        width: 20%;
+        height: auto;
+        position: absolute;
+        -webkit-transition: opacity .5s linear;
+        transition: opacity .5s linear;
+        z-index: 2000;
+        color: #a7a9ab;
+        cursor: pointer; }
+        .carousel-fade .carousel-indicators .carousel_indicator.active {
+          background: none;
+          width: 20%;
+          color: #5d8787; }
+          .carousel-fade .carousel-indicators .carousel_indicator.active h4 {
+            color: #5d8787; }
+      .carousel-fade .carousel-indicators .carousel_indicator {
+        display: block; }
+      .carousel-fade .carousel-indicators .top-center {
+        width: 40% !important;
+        right: 50%;
+        margin-right: -20%;
+        bottom: 95%;
+        text-align: center; }
+      .carousel-fade .carousel-indicators .center-left {
+        text-align: right;
+        top: 40%;
+        left: 3%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%); }
+      .carousel-fade .carousel-indicators .center-right {
+        text-align: left;
+        right: 3%;
+        top: 40%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%); }
+      .carousel-fade .carousel-indicators .bottom-left {
+        text-align: right;
+        left: 3%;
+        bottom: 15%; }
+      .carousel-fade .carousel-indicators .bottom-right {
+        text-align: left;
+        bottom: 15%;
+        right: 3%; }
+    .carousel-fade .carousel-inner {
+      position: relative;
+      width: 40%;
+      height: auto;
+      padding-top: 40%;
+      margin: 0 auto;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px dashed #5d8787; }
+      .carousel-fade .carousel-inner .item {
+        position: relative;
         width: 100%;
         height: 100%;
-        border-radius: 50%;
-        opacity: 0.3; }
-
-.departments {
-  padding: 50px 0; }
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15px;
+        overflow: hidden; }
+      .carousel-fade .carousel-inner .carousel-holder {
+        background: #5d8787;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; }
+        .carousel-fade .carousel-inner .carousel-holder img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          opacity: 0.3; }
+  .departments {
+    padding: 50px 0; } }
 
 .logobar {
-  background: #d1d2d4;
-  height: 150px; }
+  background: #d1d2d4; }
 
 .navbar {
   text-transform: uppercase; }
@@ -7988,14 +8012,16 @@ button.close {
 
 .navbar-brand {
   color: #5d8787;
-  font-size: 24px;
-  margin-top: 50px; }
+  font-size: 18px; }
+  .navbar-brand span {
+    width: 240px;
+    display: block; }
 
 .logobar .search {
-  margin: 2em 0 0 0;
-  padding: 0;
-  background: transparent;
-  display: block !important; }
+  margin: 0 -15px;
+  padding: 15px 15px 0px 15px;
+  background: #58585b;
+  display: none; }
   .logobar .search .input-group input.form-control {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px; }
@@ -8005,10 +8031,41 @@ button.close {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px; }
 
+.logobar .navbar-toggle {
+  background-color: #5d8787;
+  top: 15px;
+  padding: 13px 11px;
+  margin-right: 10px;
+  position: inherit;
+  margin-bottom: 10px; }
+  .logobar .navbar-toggle .icon-bar {
+    background: #fff; }
+  .logobar .navbar-toggle i {
+    color: #fff; }
+
 .max_logo {
   position: absolute;
   right: 0;
   top: -17px; }
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 24px; }
+  .logobar {
+    height: 150px; }
+    .logobar .search {
+      display: block;
+      margin: 2em 0 0 0;
+      padding: 0;
+      background: transparent; }
+  .navbar-brand {
+    margin-top: 50px; }
+    .navbar-brand span {
+      width: 400px; } }
+
+@media (min-width: 992px) {
+  .navbar-brand span {
+    width: auto; } }
 
 html {
   position: relative;
@@ -8019,7 +8076,7 @@ body {
   margin-bottom: 100px; }
 
 .doormat {
-  background: #d1d2d4;
+  background: #e6e7e8;
   border-top: 6px solid #808284;
   padding: 2em 0 5em 0;
   color: #808284; }
@@ -8027,6 +8084,8 @@ body {
     padding: 0;
     margin: 0;
     list-style: none; }
+  .doormat a {
+    font-weight: 500; }
 
 #portal-footer-wrapper {
   position: absolute;
@@ -8108,10 +8167,10 @@ dt, dd {
   flex: 1 0 0; }
 
 .content-wrapper {
-  background: #e6e7e8;
+  background: #f1f1f2;
   padding: 50px 0; }
   .content-wrapper article {
-    background: #f1f1f2;
+    background: white;
     color: #6d6e70;
     padding: 15px 0;
     margin: 15px 0; }
@@ -8139,6 +8198,8 @@ dt, dd {
     color: #5d8787; }
   .content-wrapper .article-news span {
     display: block; }
+  .content-wrapper .article-news img {
+    padding: 10px 0; }
 
 .masonry:after {
   clear: both;
@@ -8155,6 +8216,79 @@ dt, dd {
   background: #5d8787;
   color: white;
   padding: 50px 0; }
+
+.youtube {
+  position: fixed;
+  height: 0;
+  width: 0;
+  margin: auto;
+  background: black;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 99;
+  overflow: hidden; }
+  .youtube .youtubeholder {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+  .youtube .closeyt {
+    font-size: 24px;
+    float: right;
+    margin: 20px;
+    padding: 0;
+    height: 20px;
+    width: 20px;
+    line-height: 20px; }
+  .youtube video {
+    width: 100%;
+    margin: 0;
+    background: black; }
+  .youtube .controls {
+    background: #5d8787;
+    list-style: none;
+    display: none; }
+    .youtube .controls li {
+      display: inline-block;
+      border-right: 1px solid #d1d2d4;
+      padding: 0 5px;
+      width: 50px; }
+      .youtube .controls li button {
+        padding: 10px;
+        border: 0;
+        background: transparent;
+        color: #d1d2d4;
+        font-size: 20px; }
+        .youtube .controls li button:focus {
+          outline-style: none;
+          box-shadow: none;
+          border-color: transparent; }
+      .youtube .controls li.volume-bar {
+        width: auto; }
+      .youtube .controls li.progress {
+        margin: 0;
+        height: auto;
+        padding: 10px;
+        border-radius: 0;
+        overflow: initial;
+        box-shadow: none;
+        background-color: #5d8787;
+        width: auto; }
+        .youtube .controls li.progress progress {
+          /* Reset the default appearance */
+          -webkit-appearance: none;
+          appearance: none;
+          width: 250px;
+          height: 15px; }
+          .youtube .controls li.progress progress::-webkit-progress-bar {
+            background-color: #d1d2d4;
+            border-radius: 2px;
+            border: 2px solid #d1d2d4;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; }
+          .youtube .controls li.progress progress::-webkit-progress-value {
+            background: #5d8787; }
+      .youtube .controls li:first-child {
+        border-left: 1px solid #d1d2d4; }
 
 body {
   -webkit-font-smoothing: antialiased !important;

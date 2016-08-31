@@ -65,27 +65,21 @@
         <header>
           <div class="logobar">
               <div class="container">
-
+                
                 <div class="logo">
                   <a class="navbar-brand" title="Minaraad logo" href="home.html">
                     <span>Max Planck Institute for Psycholinguistics</span>
                   </a>
                 </div>
 
-                <button type="button"
-                        class="navbar-toggle collapsed"
-                        data-toggle="collapse"
-                        data-target="#navbar"
-                        aria-expanded="false"
-                        aria-controls="navbar">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
 
-                <button type="button"
-                        class="navbar-toggle navbar-btn btn-search">
+                <button type="button" class="navbar-toggle navbar-btn btn-search">
                   <i class="fa fa-search"></i>
                   <span class="sr-only">Toggle search</span>
                 </button>
@@ -96,17 +90,14 @@
                         <div class="input-group">
                            <label class="sr-only" for="search">Zoekterm</label>
                            <input type="text" class="form-control" name="SearchableText">
-
                            <span class="input-group-btn">
                               <button class="btn btn-default" type="submit" value="Zoeken">
                                  Zoeken
                               </button>
                            </span>
                         </div>
-
                     </form>
                   </div>
-
                 </div>
 
               </div>
@@ -156,31 +147,31 @@
                         
                         <!-- Indicators -->
                         <div class="carousel-indicators">
-                          <div data-target="#carousel" data-slide-to="0" class="bottom-left active">
+                          <div data-target="#carousel" data-slide-to="0" class="carousel_indicator bottom-left active">
                             <h4>Department 1</h4>
                             <div class="info">
                               Quae vero auctorem tractata ab fiducia dicuntur.
                             </div>
                           </div>
-                          <div data-target="#carousel" data-slide-to="1" class="center-left">
+                          <div data-target="#carousel" data-slide-to="1" class="carousel_indicator center-left">
                             <h4>Department 2</h4>
                             <div class="info">
                               Quae vero auctorem tractata ab fiducia dicuntur.
                             </div>
                           </div>
-                          <div data-target="#carousel" data-slide-to="2" class="top-center">
+                          <div data-target="#carousel" data-slide-to="2" class="carousel_indicator top-center">
                             <h4>Department 3</h4>
                             <div class="info">
                               Quae vero auctorem tractata ab fiducia dicuntur.
                             </div>
                           </div>
-                          <div data-target="#carousel" data-slide-to="3" class="center-right">
+                          <div data-target="#carousel" data-slide-to="3" class="carousel_indicator center-right">
                             <h4>Department 4</h4>
                             <div class="info">
                               Quae vero auctorem tractata ab fiducia dicuntur.
                             </div>
                           </div>
-                          <div data-target="#carousel" data-slide-to="4" class="bottom-right">
+                          <div data-target="#carousel" data-slide-to="4" class="carousel_indicator bottom-right">
                             <h4>Department 5</h4>
                             <div class="info">
                               Quae vero auctorem tractata ab fiducia dicuntur.
@@ -224,7 +215,7 @@
 
                 <div class="introductie">
                   <div class="container">
-                    <div class="col-xs-6">
+                    <div class="col-xs-12 col-sm-6">
                       <h3>Introduction</h3>
                       <p>
                         The Max Planck Institute for Psycholinguistics 
@@ -242,9 +233,41 @@
                         the IMPRS in Language Sciences, links the Donders Institute, the CLS and the MPI.
                       </p>
                     </div>
-                    <div class="col-xs-6 fullscreen">
+                    <div class="col-xs-12 col-sm-6 fullscreen">
                       <img src="img/methods_EEG_psychology.jpg" class="img-responsive">
                     </div>
+                  </div>
+                </div>
+
+                <div class="youtube">
+                  <a href="#" class="closeyt"><i class="fa fa-times" aria-hidden="true"></i></a>
+                  <div class="youtubeholder">
+                    <figure id="videoContainer">
+                       <video id="video" controls preload="metadata" poster="img/poster.jpg">
+                          <source src="static/video/a_celebration_of_language-mpi.mp4" type="video/mp4">
+                          <source src="static/video/a_celebration_of_language-mpi.webm" type="video/webm">
+                          <source src="static/video/a_celebration_of_language-mpi.ogv" type="video/ogg">
+                          <object type="application/x-shockwave-flash" data="flash-player.swf?videoUrl=video/tears-of-steel-battle-clip-medium.mp4" width="1024" height="576">
+                             <param name="movie" value="flash-player.swf?videoUrl=video/tears-of-steel-battle-clip-medium.mp4" />
+                             <param name="allowfullscreen" value="true" />
+                             <param name="wmode" value="transparent" />
+                             <param name="flashvars" value="controlbar=over&amp;image=img/poster.jpg&amp;file=flash-player.swf?videoUrl=video/tears-of-steel-battle-clip-medium.mp4" />
+                             <img alt="Tears of Steel poster image" src="img/poster.jpg" width="1024" height="428" title="No video playback possible, please download the video from the link below" />
+                          </object>
+                          <a href="video/tears-of-steel-battle-clip-medium.mp4">Download MP4</a>
+                       </video>
+                    </figure>
+                    <ul id="video-controls" class="controls">
+                       <li><button id="playpause" type="button"><i class="fa fa-pause" aria-hidden="true"></i></button></li>
+                       <li><button id="stop" type="button"><i class="fa fa-stop" aria-hidden="true"></i></button></li>
+                       <li class="progress">
+                          <progress id="progress" value="0" min="0">
+                             <span id="progress-bar"></span>
+                          </progress>
+                       </li>
+                       <li><button id="mute" type="button"><i class="fa fa-volume-up" aria-hidden="true"></i></button></li>
+                       <li class="volume-bar"><input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1"></li>
+                    </ul>
                   </div>
                 </div>
 
@@ -338,22 +361,41 @@
                     <div class="grid-items col-xs-12 col-sm-6 col-md-4">
                       <article class="article-twitter">
                         <h2><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</h2>
-                        <p>
-                          Quam diu etiam furor iste tuus nos eludet? 
-                          Nec dubitamus multa iter quae et nos invenerat. Paullum deliquit, <a href="#">#ponderibus</a> modulisque suis ratio utitur.
-                        </p>
+                        <small class="time">
+                          <a href="/MPI/status/761247893722374144" class="tweet-timestamp js-permalink js-nav js-tooltip" data-original-title="10:10 - 4 aug. 2016"><span class="_timestamp js-short-timestamp " data-aria-label-part="last" data-time="1470330615" data-time-ms="1470330615000" data-long-form="true">4 aug.</span></a>
+                        </small>
+                          <p class="TweetTextSize TweetTextSize--26px js-tweet-text tweet-text" lang="en" data-aria-label-part="0">
+                            Smart Monday Powered by MPI is back again at IMEX America. Join us on 10/17 for education &amp; inspiration! 
+                            <a href="https://t.co/HNsKT1VnW6" target="_blank" title="http://ow.ly/PZad302QHlf">
+                              <span>ow.ly/PZad302QHlf</span>
+                            </a> 
+                            <a href="https://twitter.com/hashtag/imex16?src=hash"><s>#</s><b>imex16</b>
+                            </a>
+                          </p>
                       </article>
                     </div>
 
                     <div class="grid-items col-xs-12 col-sm-6 col-md-4">
                       <article class="article-news">
                         <h2><i class="fa fa-newspaper-o" aria-hidden="true"></i>News</h2>
-                        <h5>Dingemanse, M., Schuerman, W., Reinisch, E., Tufvesson, S., & Mitterer, H. (2016).</h5>
+                        <h5>Understanding foreign accents as an indicator of language proficiency</h5>
+                        <img class="img-responsive" src="img/news-image.jpeg">
                         <p>
-                          What sound symbolism can and cannot do: Testing the iconicity of ideophones from five languages.
-                          <span>Language, 92(2), e117-e133.</span>
-                          <span>doi:10.1353/lan.2016.0034.</span>
+                          <strong>
+                            Second language learners have more trouble understanding 
+                            foreign accents as they become more proficient. 
+                            A new study by Shiri Lev-Ari and colleagues suggests 
+                            that difficulty with accents reflects success at acquiring skills in a new language.
+                          </strong>
                         </p>
+                        <p>
+                          Different languages have different sound systems, 
+                          called phonologies, and these systems shape the way we perceive sound. 
+                          When learning a new language, the phonology of our native language often distorts 
+                          the way we perceive the new language. This leads us to speak with a foreign accent, 
+                          but can also make us unaware of an accent in the speech of other non-native speakers!
+                        </p>
+                        <p><a href="#" class="btn btn-readmore">More</a></p>
                       </article>
                     </div>
                   
@@ -391,6 +433,7 @@
                 <li><a href="#">Library</a></li>
               </ul>
             </div>
+            <div class="clearfix visible-xs-block"></div>
             <div class="col-xs-6 col-sm-3">
               <h3>Experiments</h3>
               <ul>
@@ -445,6 +488,7 @@
             </div>
           </div>
         </footer>
+
         <script src="static/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -1,32 +1,66 @@
+// -----------------------------------------------------------------------------
+// Mobile first
+// -----------------------------------------------------------------------------
+
 .carousel-fade {
   position: relative;
   padding: 40px 0;
+  margin: 0 -15px;
     .carousel-inner {
-        .item {
-            transition-property: opacity;
-        }
-        
-        .item,
-        .active.left,
-        .active.right {
-            opacity: 0;
-        }
+      .item {
+          transition-property: opacity;
+      }
+  
+      .item,
+      .active.left,
+      .active.right {
+          opacity: 0;
+      }
 
-        .active,
-        .next.left,
-        .prev.right {
-            opacity: 1;
-        }
+      .active,
+      .next.left,
+      .prev.right {
+          opacity: 1;
+      }
 
-        .next,
-        .prev,
-        .active.left,
-        .active.right {
-            left: 0;
-            transform: translate3d(0, 0, 0);
-        }
+      .next,
+      .prev,
+      .active.left,
+      .active.right {
+          left: 0;
+          transform: translate3d(0, 0, 0);
+      }
     }
+    .carousel-indicators{
+      width: 100%;
+      margin: 0;
+      left: 0;
+      position: absolute;
+      bottom: 40px;
+      padding: 15px;
+      background: transparentize($mpi-green, .2);
+      color: white;
+      .carousel_indicator{
+        display: none;
+        text-align: left;
+        &.active{
+          display: block;
+          width: auto;
+          height: auto;
+          background: transparent;
+        }
+      }
+    }
+  }
 
+// -----------------------------------------------------------------------------
+// Small screen / tablet
+// -----------------------------------------------------------------------------
+
+@media (min-width: $screen-sm-min) {
+
+  .carousel-fade {
+    margin: 0;
     .carousel-control {
         z-index: 2;
     }
@@ -37,7 +71,8 @@
       left: 0;
       top: 0;
       bottom: 0;
-      > div{
+      background: none;
+      .carousel_indicator{
         display: block;
         width: 20%;
         height: auto;
@@ -47,16 +82,23 @@
         z-index: 2000;
         color: $grey5;
         cursor: pointer;
-      }
-      .active{
-        background: none;
-        h4{
+        &.active{
+          background: none;
+          width: 20%;
+          h4{
+            color: $mpi-green;
+          }
           color: $mpi-green;
         }
-        color: $mpi-green;
       }
+
+
+      .carousel_indicator{
+        display: block;
+      }
+
       .top-center{
-        width: 40%;
+        width: 40% !important;
         right: 50%;
         margin-right: -20%;
         bottom: 95%;
@@ -125,7 +167,28 @@
 
     }
 
+  }
+  .departments{
+    padding: 50px 0;
+  }
+  
 }
-.departments{
-  padding: 50px 0;
+
+
+// -----------------------------------------------------------------------------
+// Medium screen / desktop
+// -----------------------------------------------------------------------------
+
+@media (min-width: $screen-md-min) {
+
+
+
+}
+
+// -----------------------------------------------------------------------------
+// Large screen / wide desktop
+// -----------------------------------------------------------------------------
+
+@media (min-width: $screen-lg-min) {
+
 }
