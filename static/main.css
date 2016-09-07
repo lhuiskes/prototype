@@ -8086,6 +8086,9 @@ body {
     list-style: none; }
   .doormat a {
     font-weight: 500; }
+  .doormat span {
+    display: block;
+    clear: both; }
 
 #portal-footer-wrapper {
   position: absolute;
@@ -8297,6 +8300,11 @@ dt, dd {
             background: #5d8787; }
       .youtube .controls li:first-child {
         border-left: 1px solid #d1d2d4; }
+
+.article-twitter section {
+  margin: 10px 15px;
+  border-bottom: 2px dotted #5d8787;
+  padding: 0; }
 
 .modal-content {
   border-radius: 0;

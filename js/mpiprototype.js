@@ -132,11 +132,11 @@
     // ---------------------
     // Setup Masonry
     // ---------------------
-    $('.masonry').masonry({
-      columnWidth: '.grid-sizer',
-      percentPosition: true,
-      itemSelector: '.grid-items'
-    });
+    // $('.masonry').masonry({
+    //   columnWidth: '.grid-sizer',
+    //   percentPosition: true,
+    //   itemSelector: '.grid-items'
+    // });
 
     // ---------------------
     // Setup Scroll up bottom
