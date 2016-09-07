@@ -131,15 +131,14 @@ dt, dd {
 }
 
 
-.btn-readmore{
+.btn-mpigreen{
   background: $mpi-green;
-  color: $grey3;
+  color: $grey1;
   &:hover{
     color: $grey3;
     background: darken($mpi-green, 10);
   }
 }
-
 
 .introductie{
   background: $mpi-green;
@@ -243,6 +242,16 @@ dt, dd {
     }
   }
 }
+
+.modal-content{
+  border-radius: 0;
+  border-color: $mpi-green;
+  .modal-header{
+    background: $mpi-green;
+    color: #fff;
+  }
+}
+
 
 // -----------------------------------------------------------------------------
 // Small screen / tablet

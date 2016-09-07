@@ -8205,10 +8205,10 @@ dt, dd {
   clear: both;
   display: block; }
 
-.btn-readmore {
+.btn-mpigreen {
   background: #5d8787;
-  color: #d1d2d4; }
-  .btn-readmore:hover {
+  color: #f1f1f2; }
+  .btn-mpigreen:hover {
     color: #d1d2d4;
     background: #486969; }
 
@@ -8297,6 +8297,13 @@ dt, dd {
             background: #5d8787; }
       .youtube .controls li:first-child {
         border-left: 1px solid #d1d2d4; }
+
+.modal-content {
+  border-radius: 0;
+  border-color: #5d8787; }
+  .modal-content .modal-header {
+    background: #5d8787;
+    color: #fff; }
 
 body {
   -webkit-font-smoothing: antialiased !important;
