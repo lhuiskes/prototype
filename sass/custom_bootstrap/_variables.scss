@@ -231,7 +231,7 @@ $font-family-sans-serif:  "Roboto", sans-serif;
 ////## Dropdown menu container and contents.
 
 ////** Background for the dropdown menu.
-$dropdown-bg:                    $mpi-green !default;
+$dropdown-bg:                    lighten($mpi-green,15%) !default;
 ////** Dropdown menu `border-color`.
 $dropdown-border:                $grey9 !default;
 ////** Dropdown menu `border-color` **for IE8**.
@@ -240,7 +240,7 @@ $dropdown-border:                $grey9 !default;
 $dropdown-divider-bg:            $grey9 !default;
 
 ////** Dropdown link text color.
-$dropdown-link-color:            $grey4 !default;
+$dropdown-link-color:            $grey9 !default;
 ////** Hover color for dropdown links.
 $dropdown-link-hover-color:      $grey9 !default;
 ////** Hover background for dropdown links.
@@ -368,7 +368,7 @@ $navbar-default-bg:                $grey9 !default;
 $navbar-default-border:            $grey9 !default;
 
 //// Navbar links
-$navbar-default-link-color:                $mpi-green !default;
+$navbar-default-link-color:                lighten($mpi-green,15%) !default;
 $navbar-default-link-hover-color:          $grey3 !default;
 //$navbar-default-link-hover-bg:             transparent !default;
 $navbar-default-link-active-color:         $grey3 !default;
