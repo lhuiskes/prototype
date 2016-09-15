@@ -102,12 +102,16 @@
       d.width = $(window).width();;
       d.height = $(window).height();; 
 
+
       $(".youtube").animate(d,speed);
 
       setTimeout(
         function()
         {
           video.play();
+          var videowidth = $("#video").width();
+          console.log(videowidth);
+          $("#video-controls").width(videowidth);
           $("#video-controls").show();
         }, speed);
 
