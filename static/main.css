@@ -3212,9 +3212,9 @@ tbody.collapse.in {
   list-style: none;
   font-size: 14px;
   text-align: left;
-  background-color: #85abab;
+  background-color: #d1dfdf;
   border: 1px solid #ccc;
-  border: 1px solid #58585b;
+  border: 1px solid #d1dfdf;
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -3226,20 +3226,20 @@ tbody.collapse.in {
     height: 1px;
     margin: 9px 0;
     overflow: hidden;
-    background-color: #58585b; }
+    background-color: #5d8787; }
   .dropdown-menu > li > a {
     display: block;
     padding: 3px 20px;
     clear: both;
     font-weight: normal;
     line-height: 1.428571429;
-    color: #58585b;
+    color: #5d8787;
     white-space: nowrap; }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #58585b;
-  background-color: #f1f1f2; }
+  color: white;
+  background-color: #5d8787; }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
   color: #fff;

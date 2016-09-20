@@ -231,20 +231,20 @@ $font-family-sans-serif:  "Roboto", sans-serif;
 ////## Dropdown menu container and contents.
 
 ////** Background for the dropdown menu.
-$dropdown-bg:                    lighten($mpi-green,15%) !default;
+$dropdown-bg:                    lighten($mpi-green,40%) !default;
 ////** Dropdown menu `border-color`.
-$dropdown-border:                $grey9 !default;
+$dropdown-border:                lighten($mpi-green,40%) !default;
 ////** Dropdown menu `border-color` **for IE8**.
 //$dropdown-fallback-border:       #ccc !default;
 ////** Divider color for between dropdown items.
-$dropdown-divider-bg:            $grey9 !default;
+$dropdown-divider-bg:            $mpi-green !default;
 
 ////** Dropdown link text color.
-$dropdown-link-color:            $grey9 !default;
+$dropdown-link-color:            $mpi-green !default;
 ////** Hover color for dropdown links.
-$dropdown-link-hover-color:      $grey9 !default;
+$dropdown-link-hover-color:      white !default;
 ////** Hover background for dropdown links.
-$dropdown-link-hover-bg:         $grey1 !default;
+$dropdown-link-hover-bg:         $mpi-green !default;
 
 ////** Active dropdown menu item text color.
 //$dropdown-link-active-color:     $component-active-color !default;
