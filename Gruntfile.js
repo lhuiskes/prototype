@@ -72,7 +72,7 @@ module.exports = function(grunt) {
                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js',
                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js',
                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js',
-                       'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js',
+                       'js/bootstrap_carousel.js',
                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js',
                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js',
                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js',
@@ -115,7 +115,7 @@ module.exports = function(grunt) {
                 tasks: ['sass']
             },
             uglify: {
-                files: ['js/mpiprototype.js'],
+                files: ['js/mpiprototype.js', 'js/bootstrap_carousel.js'],
                 tasks: ['jshint', 'uglify']
             }
         }

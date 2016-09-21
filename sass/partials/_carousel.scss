@@ -31,7 +31,7 @@
           transform: translate3d(0, 0, 0);
       }
     }
-    .carousel-indicators{
+    .carousel-departments{
       width: 100%;
       margin: 0;
       left: 0;
@@ -51,6 +51,15 @@
         }
       }
     }
+    .carousel-indicators{
+      bottom: 0;
+      li{
+        border: 1px solid $mpi-green;
+      }
+      .active{
+        background-color: $mpi-green;
+      }
+    }
   }
 
 // -----------------------------------------------------------------------------
@@ -65,7 +74,7 @@
         z-index: 2;
     }
 
-    .carousel-indicators{
+    .carousel-departments{
       width: 100%;
       margin: 0;
       left: 0;

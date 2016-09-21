@@ -10,9 +10,9 @@
     // Setup Bootstrap Carousel
     // ---------------------
     $('.carousel').carousel({
-      interval: 5000
+      interval: 3000
     })
-    $('.item img').fadeTo( 4000, 0.8 );
+    $('.item img').fadeTo( 3000, 0.8 );
     $('#carousel').on('slide.bs.carousel', function (e) {
       // Set all images to default
       $('.item img').fadeTo( "fast", 0.3 );
@@ -21,9 +21,27 @@
       var activeslide = e.relatedTarget
       var activeimg = $(activeslide).find("img")
       // Slide with 1.5 sec to full 
-      $(activeimg).fadeTo( 4000, 0.8 );
+      $(activeimg).fadeTo( 3000, 0.8 );
 
     })
+
+    this.$element    = $(element)
+    this.$indicators = this.$element.find('.carousel-indicators')
+    var $nextIndicator = $(this.$indicators.children()[this.getItemIndex($next)])
+    console.log($nextIndicator);
+
+
+    $('#carousel').on('slide.bs.carousel', function () {
+        var $holder = $( "ol li.active" );
+        $holder.removeClass('active');
+        var idx = $('div.active').index('div.item');
+        $('ol.carousel-indicators li[data-slide-to="'+ idx+'"]').addClass('active');
+    });
+
+    $('ol.carousel-indicators li').on("click",function(){ 
+        $('ol.carousel-indicators li.active').removeClass("active");
+        $(this).addClass("active");
+    });
 
     // ---------------------
     // Setup Youtube fullscreen
@@ -98,7 +116,7 @@
 
     $('.fullscreen').on('click', function(e) {
       var d = {};
-      var speed = 1000;
+      var speed = 500;
       d.width = $(window).width();;
       d.height = $(window).height();; 
 
@@ -119,7 +137,7 @@
 
     $('.closeyt').on('click', function(e) {
       var d = {};
-      var speed = 1000;
+      var speed = 500;
       d.width = 0;
       d.height = 0; 
 

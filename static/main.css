@@ -7894,7 +7894,7 @@ button.close {
   .carousel-fade .carousel-inner .active.right {
     left: 0;
     transform: translate3d(0, 0, 0); }
-  .carousel-fade .carousel-indicators {
+  .carousel-fade .carousel-departments {
     width: 100%;
     margin: 0;
     left: 0;
@@ -7903,28 +7903,34 @@ button.close {
     padding: 15px;
     background: rgba(93, 135, 135, 0.8);
     color: white; }
-    .carousel-fade .carousel-indicators .carousel_indicator {
+    .carousel-fade .carousel-departments .carousel_indicator {
       display: none;
       text-align: left; }
-      .carousel-fade .carousel-indicators .carousel_indicator.active {
+      .carousel-fade .carousel-departments .carousel_indicator.active {
         display: block;
         width: auto;
         height: auto;
         background: transparent; }
+  .carousel-fade .carousel-indicators {
+    bottom: 0; }
+    .carousel-fade .carousel-indicators li {
+      border: 1px solid #5d8787; }
+    .carousel-fade .carousel-indicators .active {
+      background-color: #5d8787; }
 
 @media (min-width: 768px) {
   .carousel-fade {
     margin: 0; }
     .carousel-fade .carousel-control {
       z-index: 2; }
-    .carousel-fade .carousel-indicators {
+    .carousel-fade .carousel-departments {
       width: 100%;
       margin: 0;
       left: 0;
       top: 0;
       bottom: 0;
       background: none; }
-      .carousel-fade .carousel-indicators .carousel_indicator {
+      .carousel-fade .carousel-departments .carousel_indicator {
         display: block;
         width: 20%;
         height: auto;
@@ -7934,39 +7940,39 @@ button.close {
         z-index: 2000;
         color: #a7a9ab;
         cursor: pointer; }
-        .carousel-fade .carousel-indicators .carousel_indicator.active {
+        .carousel-fade .carousel-departments .carousel_indicator.active {
           background: none;
           width: 20%;
           color: #5d8787; }
-          .carousel-fade .carousel-indicators .carousel_indicator.active h4 {
+          .carousel-fade .carousel-departments .carousel_indicator.active h4 {
             color: #5d8787; }
-      .carousel-fade .carousel-indicators .carousel_indicator {
+      .carousel-fade .carousel-departments .carousel_indicator {
         display: block; }
-      .carousel-fade .carousel-indicators .top-center {
+      .carousel-fade .carousel-departments .top-center {
         width: 40% !important;
         right: 50%;
         margin-right: -20%;
         bottom: 95%;
         text-align: center; }
-      .carousel-fade .carousel-indicators .center-left {
+      .carousel-fade .carousel-departments .center-left {
         text-align: right;
         top: 40%;
         left: 3%;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         -ms-transform: translateY(-50%); }
-      .carousel-fade .carousel-indicators .center-right {
+      .carousel-fade .carousel-departments .center-right {
         text-align: left;
         right: 3%;
         top: 40%;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         -ms-transform: translateY(-50%); }
-      .carousel-fade .carousel-indicators .bottom-left {
+      .carousel-fade .carousel-departments .bottom-left {
         text-align: right;
         left: 3%;
         bottom: 15%; }
-      .carousel-fade .carousel-indicators .bottom-right {
+      .carousel-fade .carousel-departments .bottom-right {
         text-align: left;
         bottom: 15%;
         right: 3%; }
