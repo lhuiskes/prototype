@@ -7874,6 +7874,22 @@ button.close {
 .fa-fonticons:before {
   content: ""; }
 
+@-webkit-keyframes pop {
+  50% {
+    transform: scale(1.2); } }
+
+@-moz-keyframes pop {
+  50% {
+    transform: scale(1.2); } }
+
+@-o-keyframes pop {
+  50% {
+    transform: scale(1.2); } }
+
+@keyframes pop {
+  50% {
+    transform: scale(1.2); } }
+
 .carousel-fade {
   position: relative;
   padding: 40px 0;
@@ -7910,7 +7926,15 @@ button.close {
         display: block;
         width: auto;
         height: auto;
-        background: transparent; }
+        background: transparent;
+        -webkit-animation-name: pop;
+        animation-name: pop;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; }
   .carousel-fade .carousel-indicators {
     bottom: 0; }
     .carousel-fade .carousel-indicators li {
