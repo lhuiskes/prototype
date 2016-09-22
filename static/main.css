@@ -7918,7 +7918,8 @@ button.close {
     bottom: 40px;
     padding: 15px;
     background: rgba(93, 135, 135, 0.8);
-    color: white; }
+    color: white;
+    z-index: 999; }
     .carousel-fade .carousel-departments .carousel_indicator {
       display: none;
       text-align: left; }
@@ -7926,17 +7927,10 @@ button.close {
         display: block;
         width: auto;
         height: auto;
-        background: transparent;
-        -webkit-animation-name: pop;
-        animation-name: pop;
-        -webkit-animation-duration: 0.7s;
-        animation-duration: 0.7s;
-        -webkit-animation-timing-function: linear;
-        animation-timing-function: linear;
-        -webkit-animation-iteration-count: 1;
-        animation-iteration-count: 1; }
+        background: transparent; }
   .carousel-fade .carousel-indicators {
-    bottom: 0; }
+    bottom: 0;
+    z-index: 9999; }
     .carousel-fade .carousel-indicators li {
       border: 1px solid #5d8787; }
     .carousel-fade .carousel-indicators .active {
@@ -7964,9 +7958,19 @@ button.close {
         z-index: 2000;
         color: #a7a9ab;
         cursor: pointer; }
+        .carousel-fade .carousel-departments .carousel_indicator .info {
+          display: none; }
         .carousel-fade .carousel-departments .carousel_indicator.active {
           background: none;
           width: 20%;
+          -webkit-animation-name: pop;
+          animation-name: pop;
+          -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+          -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+          -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
           color: #5d8787; }
           .carousel-fade .carousel-departments .carousel_indicator.active h4 {
             color: #5d8787; }
@@ -8031,6 +8035,10 @@ button.close {
           opacity: 0.3; }
   .departments {
     padding: 50px 0; } }
+
+@media (min-width: 992px) {
+  .carousel-fade .carousel-departments .carousel_indicator .info {
+    display: block; } }
 
 .logobar {
   background: #d1d2d4; }
@@ -8273,7 +8281,7 @@ dt, dd {
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
-  z-index: 99;
+  z-index: 99999;
   overflow: hidden; }
   .youtube .youtubeholder {
     position: absolute;

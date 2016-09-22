@@ -54,6 +54,7 @@
       padding: 15px;
       background: transparentize($mpi-green, .2);
       color: white;
+      z-index: 999;
       .carousel_indicator{
         display: none;
         text-align: left;
@@ -62,19 +63,12 @@
           width: auto;
           height: auto;
           background: transparent;
-          -webkit-animation-name: pop;
-          animation-name: pop;
-          -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-          -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-          -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
         }
       }
     }
     .carousel-indicators{
       bottom: 0;
+      z-index: 9999;
       li{
         border: 1px solid $mpi-green;
       }
@@ -113,9 +107,21 @@
         z-index: 2000;
         color: $grey5;
         cursor: pointer;
+        .info{
+          display: none;
+        }
         &.active{
           background: none;
           width: 20%;
+          -webkit-animation-name: pop;
+          animation-name: pop;
+          -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+          -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+          -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+          
           h4{
             color: $mpi-green;
           }
@@ -212,8 +218,15 @@
 
 @media (min-width: $screen-md-min) {
 
-
-
+  .carousel-fade{
+    .carousel-departments{
+      .carousel_indicator{
+        .info{
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 // -----------------------------------------------------------------------------
