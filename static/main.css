@@ -7876,19 +7876,19 @@ button.close {
 
 @-webkit-keyframes pop {
   50% {
-    transform: scale(1.2); } }
+    transform: scale(1.1); } }
 
 @-moz-keyframes pop {
   50% {
-    transform: scale(1.2); } }
+    transform: scale(1.1); } }
 
 @-o-keyframes pop {
   50% {
-    transform: scale(1.2); } }
+    transform: scale(1.1); } }
 
 @keyframes pop {
   50% {
-    transform: scale(1.2); } }
+    transform: scale(1.1); } }
 
 .carousel-fade {
   position: relative;
