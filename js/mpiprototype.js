@@ -25,23 +25,6 @@
 
     })
 
-    this.$element    = $(element)
-    this.$indicators = this.$element.find('.carousel-indicators')
-    var $nextIndicator = $(this.$indicators.children()[this.getItemIndex($next)])
-    console.log($nextIndicator);
-
-
-    $('#carousel').on('slide.bs.carousel', function () {
-        var $holder = $( "ol li.active" );
-        $holder.removeClass('active');
-        var idx = $('div.active').index('div.item');
-        $('ol.carousel-indicators li[data-slide-to="'+ idx+'"]').addClass('active');
-    });
-
-    $('ol.carousel-indicators li').on("click",function(){ 
-        $('ol.carousel-indicators li.active').removeClass("active");
-        $(this).addClass("active");
-    });
 
     // ---------------------
     // Setup Youtube fullscreen
