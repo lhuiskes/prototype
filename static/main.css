@@ -7876,19 +7876,19 @@ button.close {
 
 @-webkit-keyframes pop {
   50% {
-    transform: scale(1.1); } }
+    transform: scale(1.05); } }
 
 @-moz-keyframes pop {
   50% {
-    transform: scale(1.1); } }
+    transform: scale(1.05); } }
 
 @-o-keyframes pop {
   50% {
-    transform: scale(1.1); } }
+    transform: scale(1.05); } }
 
 @keyframes pop {
   50% {
-    transform: scale(1.1); } }
+    transform: scale(1.05); } }
 
 .carousel-fade {
   position: relative;
@@ -7929,8 +7929,8 @@ button.close {
         background: transparent;
         -webkit-animation-name: pop;
         animation-name: pop;
-        -webkit-animation-duration: 0.3s;
-        animation-duration: 0.3s;
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
         -webkit-animation-timing-function: linear;
         animation-timing-function: linear;
         -webkit-animation-iteration-count: 1;
