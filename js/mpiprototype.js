@@ -12,19 +12,6 @@
     $('.carousel').carousel({
       interval: 3000
     })
-    $('.item img').fadeTo( 3000, 0.8 );
-    $('#carousel').on('slide.bs.carousel', function (e) {
-      // Set all images to default
-      $('.item img').fadeTo( "fast", 0.3 );
-
-      // Variables to get next active slide
-      var activeslide = e.relatedTarget
-      var activeimg = $(activeslide).find("img")
-      // Slide with 1.5 sec to full 
-      $(activeimg).fadeTo( 3000, 0.8 );
-
-    })
-
 
     // ---------------------
     // Setup Youtube fullscreen

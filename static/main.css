@@ -7890,6 +7890,37 @@ button.close {
   50% {
     transform: scale(1.05); } }
 
+@keyframes opacity {
+  from {
+    opacity: .8; }
+  to {
+    opacity: .2; } }
+
+.carousel-circle {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  display: block;
+  height: auto;
+  max-width: 100%; }
+  .carousel-circle:before {
+    background: #5d8787;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .8;
+    animation-name: opacity;
+    animation-duration: 3s; }
+
 .carousel-fade {
   position: relative;
   padding: 40px 0;
@@ -7937,6 +7968,10 @@ button.close {
       background-color: #5d8787; }
 
 @media (min-width: 768px) {
+  .carousel-circle {
+    border-radius: 50%; }
+    .carousel-circle:before {
+      border-radius: 50%; }
   .carousel-fade {
     margin: 0; }
     .carousel-fade .carousel-control {
@@ -8092,7 +8127,13 @@ button.close {
 .max_logo {
   position: absolute;
   right: 0;
-  top: -17px; }
+  top: -17px;
+  height: 90px;
+  width: 90px; }
+  .max_logo a:focus {
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent; }
 
 @media (min-width: 768px) {
   .navbar-brand {
