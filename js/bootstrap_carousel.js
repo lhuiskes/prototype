@@ -16,6 +16,7 @@
   var Carousel = function (element, options) {
     this.$element    = $(element)
     this.$indicators = this.$element.find('.carousel-indicators, .carousel-departments')
+    this.$indicator_custom = this.$element.find('.carousel-indicators')
     this.options     = options
     this.paused      = null
     this.sliding     = null
@@ -139,6 +140,12 @@
       this.$indicators.find('.active').removeClass('active')
       var $nextIndicator = $(this.$indicators.children()[this.getItemIndex($next)])
       $nextIndicator && $nextIndicator.addClass('active')
+    }
+
+    if (this.$indicator_custom.length) {
+      this.$indicator_custom.find('.active').removeClass('active')
+      var $nextIndicator_custom = $(this.$indicator_custom.children()[this.getItemIndex($next)])
+      $nextIndicator_custom && $nextIndicator_custom.addClass('active')
     }
 
     var slidEvent = $.Event('slid.bs.carousel', { relatedTarget: relatedTarget, direction: direction }) // yes, "slid"
