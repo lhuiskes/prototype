@@ -7984,15 +7984,15 @@ button.close {
         text-align: center; }
       .carousel-fade .carousel-departments .center-left {
         text-align: right;
-        top: 40%;
+        top: 30%;
         left: 3%;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         -ms-transform: translateY(-50%); }
       .carousel-fade .carousel-departments .center-right {
         text-align: left;
+        top: 30%;
         right: 3%;
-        top: 40%;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         -ms-transform: translateY(-50%); }
