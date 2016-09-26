@@ -13,6 +13,15 @@
       interval: 3000
     })
 
+    $(document).ready(function() {  
+       $("#carousel").swiperight(function() {  
+          $("#carousel").carousel('prev');  
+        });  
+       $("#carousel").swipeleft(function() {  
+          $("#carousel").carousel('next');  
+       });  
+    });  
+
     // ---------------------
     // Setup Youtube fullscreen
     // ---------------------

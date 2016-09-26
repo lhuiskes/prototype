@@ -64,24 +64,26 @@ module.exports = function(grunt) {
                         // Only uncomment required js.
                         //
                         // Jquery
-                       'bower_components/jquery/jquery.js',
+                        'bower_components/jquery/jquery.js',
                         'bower_components/jquery-ui/ui/jquery.ui.core.js',
+                        // Jquery mobile
+                        'js/jquery.mobile.custom.min.js',
                         // Masonry
-                       'bower_components/masonry/dist/masonry.pkgd.js',
+                        'bower_components/masonry/dist/masonry.pkgd.js',
                         // Bootstrap
-                       'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js',
-                       'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js',
-                       'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js',
-                       'js/bootstrap_carousel.js',
-                       'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js',
-                       'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js',
-                       'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js',
-                       'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js',
-                       'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js',
-                       'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js',
-                       'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js',
-                       'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js',
-                       'js/mpiprototype.js'
+                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js',
+                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js',
+                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js',
+                        'js/bootstrap_carousel.js',
+                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js',
+                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js',
+                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js',
+                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js',
+                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js',
+                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js',
+                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js',
+                        'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js',
+                        'js/mpiprototype.js'
                       ],
                       dest: 'static/main.js',
                       nonull: true
