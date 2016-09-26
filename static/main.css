@@ -7923,7 +7923,7 @@ button.close {
 
 .carousel-fade {
   position: relative;
-  padding: 40px 0;
+  padding-bottom: 40px;
   margin: 0 -15px; }
   .carousel-fade .carousel-inner .item {
     transition-property: opacity; }
@@ -7973,7 +7973,8 @@ button.close {
     .carousel-circle:before {
       border-radius: 50%; }
   .carousel-fade {
-    margin: 0; }
+    margin: 0;
+    padding: 40px 0; }
     .carousel-fade .carousel-control {
       z-index: 2; }
     .carousel-fade .carousel-departments {
@@ -8079,7 +8080,8 @@ button.close {
   background: #d1d2d4; }
 
 .navbar {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 0; }
   .navbar .container {
     position: relative; }
 
@@ -8092,6 +8094,10 @@ button.close {
 
 .navbar-collapse {
   box-shadow: none; }
+
+.mobile_buttons {
+  display: inline-block;
+  float: right; }
 
 .logobar {
   background: url("../img/header_bg.png");
@@ -8129,13 +8135,16 @@ button.close {
   right: 0;
   top: -17px;
   height: 90px;
-  width: 90px; }
+  width: 90px;
+  z-index: 9999; }
   .max_logo a:focus {
     outline-style: none;
     box-shadow: none;
     border-color: transparent; }
 
 @media (min-width: 768px) {
+  .navbar {
+    margin-bottom: 20px; }
   .navbar-brand {
     font-size: 24px; }
   .logobar {

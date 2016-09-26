@@ -17,6 +17,7 @@
 
 .navbar{
   text-transform: uppercase;
+  margin-bottom: 0;
   .container{
     position: relative;
   }
@@ -32,6 +33,11 @@
 
 .navbar-collapse{
   box-shadow: none;
+}
+
+.mobile_buttons {
+  display: inline-block;
+  float: right;
 }
 
 .logobar{
@@ -79,6 +85,7 @@
   top: -17px;
   height: 90px;
   width: 90px;
+  z-index: 9999;
   a:focus{
     outline-style:none;
     box-shadow:none;
@@ -96,6 +103,10 @@
 // -----------------------------------------------------------------------------
 
 @media (min-width: $screen-sm-min) {
+  
+  .navbar{
+    margin-bottom: 20px;
+  }
   
   .navbar-brand{
     font-size: 24px;
